@@ -23,13 +23,14 @@
         android:layout_centerHorizontal="true"/>
 
     <ImageView
+        android:id="@+id/logoImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logoImage"
-        android:contentDescription="@string/imageview_desc"
-        android:src="@drawable/bitcoin_image"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/imageview_desc"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:src="@drawable/bitcoin_image" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -47,17 +48,16 @@
             android:textStyle="bold"
             android:id="@+id/textView"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="9dp"
             android:layout_marginRight="10dp"/>
 
         <Spinner
+            android:id="@+id/currency_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/currency_spinner"
-            android:gravity="center_horizontal"
-            android:spinnerMode="dropdown"
             android:dropDownSelector="@color/fontColour"
-            />
+            android:gravity="center_horizontal"
+            android:spinnerMode="dropdown" />
 
 
     </LinearLayout>
